@@ -286,7 +286,7 @@ var request = require("request");
   };
   request.post({
     url: "https://api-production.august.com/session",
-    headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)', 'accept-version': '0.0.1', 'Proxy-Connection': 'keep-alive', 'accept-Language': 'en-US;q=1'},
+    headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'Proxy-Connection': 'keep-alive', 'accept-Language': 'en-US;q=1'},
    
     body: JSON.stringify(body)
 
@@ -320,7 +320,7 @@ var request = require("request");
               headers: {
                   'content-type': 'application/json',
                   'x-kease-api-key': '14445b6a2dba',
-                  'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)',
+                  'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)',
                   'accept-version': '0.0.1',
                   'x-august-access-token': this.securityToken
               },
@@ -347,7 +347,7 @@ var request = require("request");
       require('request').post({
           
         url:"https://api-production.august.com/validate/phone",
-           headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
+           headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
          
           body: JSON.stringify(body)
           },function(error,request,body){
@@ -368,7 +368,7 @@ var request = require("request");
     require('request').get({
           
         url:"https://api-production.august.com/users/locks/mine",
-           headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
+           headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
          
           },function(error,request,body){
             if (!error && request.statusCode == 200) {
@@ -397,7 +397,7 @@ var request = require("request");
     // Querystring params
     require('request').get({
     uri:"https://api-production.august.com/locks/" + self.lockids,
-    headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
+    headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
     },function(error,request,body){
 
       if (!error && request.statusCode == 200) {
@@ -541,7 +541,7 @@ console.log(augustState);
               'x-kease-api-key': '14445b6a2dba',
               'x-august-access-token': this.securityToken,
               'Proxy-Connection': 'keep-alive',
-              'userAgent': 'August/5.4.13 (iPhone; iOS 10.2.1; Scale/2.00)',
+              'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)',
               'accept-version': '0.0.1',
               'accept-Language': 'en-US;q=1'
           }
