@@ -541,7 +541,7 @@ var augustState = (state == Characteristic.LockTargetState.SECURED) ? "lock" : "
 console.log(augustState);
   var status = self.lockState[state];
     request.put({
-          url: "https://api-production.august.com/remoteoperate/" + self.lockids + "/" + augustState,
+          url: "https://api-production.august.com/remoteoperate/" + self.lockid + "/" + augustState,
           "headers": {
               "Content-Type": 'application/json',
               'x-kease-api-key': '14445b6a2dba',
