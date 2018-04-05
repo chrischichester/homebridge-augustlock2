@@ -380,11 +380,8 @@ var request = require("request");
                 
                 self.lockname = self.lock["LockName"];
                 self.housename = self.lock["HouseName"]
-                //
-              self.platformLog("DEBUG: "+ self.lockname + " " + self.lockids[i] + " " + self.lock);
-              
-              //
-                self.platformLog(self.housename + " " + self.lockname);
+            
+                self.platformLog(self.housename + " " + self.lockname + " " self.lockids[i]);
                 self.getDevice(callback);
               }
             }
