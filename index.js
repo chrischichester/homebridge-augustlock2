@@ -381,7 +381,7 @@ var request = require("request");
                 self.lockname = self.lock["LockName"];
                 self.housename = self.lock["HouseName"]
             
-                self.platformLog(self.housename + " " + self.lockname + " " self.lockids[i]);
+                self.platformLog(self.housename + " " + self.lockname + " " + self.lockids[i]);
                 self.getDevice(callback);
               }
             }
