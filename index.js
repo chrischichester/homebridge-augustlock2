@@ -374,21 +374,14 @@ var request = require("request");
             if (!error && request.statusCode == 200) {
               var json = JSON.parse(body);
               self.lockids = Object.keys(json);
-               //
-              self.platformLog("DEBUG: "+ self.lockids);
-          
-              //
+              
               for (var i = 0; i < self.lockids.length; i++) {
                 self.lock = json[self.lockids[i]];
-                //
-              self.platformLog("DEBUG: "+ self.lock);
-          
-              //
                 
                 self.lockname = self.lock["LockName"];
                 self.housename = self.lock["HouseName"]
                 //
-              self.platformLog("DEBUG: "+ self.lockname + " " + self.lockids[i]);
+              self.platformLog("DEBUG: "+ self.lockname + " " + self.lockids[i] + " " + self.lock);
               
               //
                 self.platformLog(self.housename + " " + self.lockname);
