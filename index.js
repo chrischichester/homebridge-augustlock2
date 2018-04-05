@@ -310,7 +310,7 @@ var request = require("request");
   AugustPlatform.prototype.postLogin = function(accessory, paired, getlocks, callback) {
       var self = this;
       if (self.securityToken) {
-        self.platformLog("Working"...);
+        self.platformLog("Working...");
           self.getlocks(accessory);
 
       } else {
