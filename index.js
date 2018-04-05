@@ -404,7 +404,7 @@ var request = require("request");
     uri:"https://api-production.august.com/locks/" + self.lockids,
     headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
     },function(error,request,body){
-
+self.platformLog("Getting to 407");
       if (!error && request.statusCode == 200) {
           var locks = JSON.parse(body);
           self.platformLog("Getting to 410");
