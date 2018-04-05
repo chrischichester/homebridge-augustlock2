@@ -374,6 +374,10 @@ var request = require("request");
             if (!error && request.statusCode == 200) {
               var json = JSON.parse(body);
               self.lockids = Object.keys(json);
+              //
+              self.platformLog("DEBUG: "+ self.lockids);
+              
+              //
               for (var i = 0; i < self.lockids.length; i++) {
                 self.lock = json[self.lockids[i]];
                 self.lockname = self.lock["HouseName"];
@@ -514,7 +518,7 @@ var request = require("request");
       
          callback();
         } else {
-          self.platformLog("Error: Couldn't find a August lock device." + self.securityToken);
+          self.platformLog("Error: Couldn't find a August lock device.");
           callback("Missing August Device ID");
         }
       
