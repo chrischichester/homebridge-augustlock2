@@ -514,7 +514,7 @@ var request = require("request");
       
          callback();
         } else {
-          self.platformLog("Error: Couldn't find a August lock device.");
+          self.platformLog("Error: Couldn't find a August lock device." + self.securityToken);
           callback("Missing August Device ID");
         }
       
