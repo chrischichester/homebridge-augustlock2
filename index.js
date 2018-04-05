@@ -401,7 +401,7 @@ var request = require("request");
 
     // Querystring params
     require('request').get({
-    uri:"https://api-production.august.com/locks/" + self.lock,
+    uri:"https://api-production.august.com/locks/" + self.lockids[i],
     headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
     },function(error,request,body){
 self.platformLog("Getting to 407"+ request.statusCode + " " + body);
