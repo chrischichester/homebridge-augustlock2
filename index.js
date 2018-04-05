@@ -377,7 +377,7 @@ var request = require("request");
               for (var i = 0; i < self.lockids.length; i++) {
                 self.lock = json[self.lockids[i]];
                 self.lockname = self.lock["HouseName"];
-                self.platformLog("House Name " + " " + self.lockname);
+                self.platformLog("House Name" + " " + self.lockname);
                 self.getDevice(callback);
               }
             }
