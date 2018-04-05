@@ -381,7 +381,7 @@ var request = require("request");
               self.platformLog("DEBUG: "+ self.lock);
           
               //
-                self.lockname = self.lock["HouseName"];
+                self.lockname = self.lock["LockName"];
                 //
               self.platformLog("DEBUG: "+ self.lockname);
               
