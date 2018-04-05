@@ -376,7 +376,7 @@ var request = require("request");
               var json = JSON.parse(body);
               self.lockids = Object.keys(json);
               
-              for (var i = 0; i < self.lockids.length; i++) {
+              for (var i = 0; i < 1; i++) {
                 self.lock = json[self.lockids[i]];
                 
                 self.lockname = self.lock["LockName"];
