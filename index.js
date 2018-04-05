@@ -298,7 +298,7 @@ var request = require("request");
         self.userId = json["userId"];
     
         self.securityToken = request.headers['x-august-access-token'];
-        self.platformLog("Logged in with ID" + self.userId);
+        self.platformLog("Logged in with ID" + self.userId + " " + self.securityToken);
         self.postLogin(callback);
     }
     }).on('error', function(error) {
