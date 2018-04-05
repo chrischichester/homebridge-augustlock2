@@ -404,13 +404,13 @@ var request = require("request");
     uri:"https://api-production.august.com/locks/" + self.lockid,
     headers:{'content-type': 'application/json', 'x-kease-api-key': '14445b6a2dba', 'userAgent': 'August/5.4.13 (iPhone; iOS 11.3; Scale/2.00)', 'accept-version': '0.0.1', 'x-august-access-token': this.securityToken},
     },function(error,request,body){
-self.platformLog("Getting to 407"+ request.statusCode + " " + body + " " + self.lockids[0]);
+
       if (!error && request.statusCode == 200) {
           var locks = JSON.parse(body);
           self.platformLog("Getting to 410");
              var thisDeviceID = locks.LockID.toString();
               var thisSerialNumber = locks.SerialNumber.toString();
-              var thisModel = locks.Bridge.deviceModel.toString();
+             // var thisModel = locks.Bridge.deviceModel.toString();
               var thislockName = locks.LockName;
               var state = locks.LockStatus.status;
               var nameFound = true;
