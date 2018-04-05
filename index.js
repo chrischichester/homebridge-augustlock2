@@ -407,7 +407,7 @@ var request = require("request");
 
       if (!error && request.statusCode == 200) {
           var locks = JSON.parse(body);
-          
+          self.platformLog("Getting to 410");
              var thisDeviceID = locks.LockID.toString();
               var thisSerialNumber = locks.SerialNumber.toString();
               var thisModel = locks.Bridge.deviceModel.toString();
