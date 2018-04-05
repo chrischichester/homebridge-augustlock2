@@ -540,6 +540,7 @@ var request = require("request");
 var augustState = (state == Characteristic.LockTargetState.SECURED) ? "lock" : "unlock";
 console.log(augustState);
   var status = self.lockState[state];
+    self.platformLog("543 "+ self.lockid);
     request.put({
           url: "https://api-production.august.com/remoteoperate/" + self.lockid + "/" + augustState,
           "headers": {
