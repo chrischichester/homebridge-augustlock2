@@ -297,7 +297,7 @@ var request = require("request");
         var json = JSON.parse(body);
         self.userId = json["userId"];
     
-        self.securityToken = request.headers['x-august-access-token'];
+        //self.securityToken = request.headers['x-august-access-token'];
         self.platformLog("Logged in with ID" + self.userId + " " + self.securityToken);
         self.postLogin(callback);
     }
