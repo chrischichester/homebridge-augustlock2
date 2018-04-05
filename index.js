@@ -375,7 +375,7 @@ var request = require("request");
               var json = JSON.parse(body);
               self.lockids = Object.keys(json);
               //
-              self.platformLog("DEBUG: "+ self.lockids);
+              self.platformLog("DEBUG: "+ self.lockids.length);
               
               //
               for (var i = 0; i < self.lockids.length; i++) {
